@@ -106,14 +106,18 @@ app.layout = html.Div(
                 html.Div(
                     [
                         html.Img(
-                            src=app.get_asset_url("datajarlabs-logo.png"),
+                            src=app.get_asset_url("github_logo.png"),
                             id="logo-image",
                             style={
                                 "height": "60px",
                                 "width": "auto",
                                 "margin-bottom": "25px",
                             },
-                        )
+                        ),
+                        html.A(
+                            html.Button("a.emrevarol@gmail.com",
+                                        id="mail-button"),
+                        ),
                     ],
                     className="one-third column",
                 ),
@@ -122,13 +126,13 @@ app.layout = html.Div(
                         html.Div(
                             [
                                 html.H3(
-                                    "Perakende Satış Analizi",
+                                    "e-Ticaret Satış Analizi",
                                     style={"margin-bottom": "0px",
                                            "color": "blue"},
                                 ),
-                                html.H5(
-                                    "Dashboard", style={"margin-top": "0px"}
-                                ),
+                                # html.H5(
+                                #     "Dashboard", style={"margin-top": "0px"}
+                                # ),
                             ]
                         )
                     ],
@@ -140,8 +144,8 @@ app.layout = html.Div(
                         html.A(
                             html.Button("Detaylı Bilgi",
                                         id="learn-more-button"),
-                            href="https://datajarlabs.com/",
-                        )
+                            href="https://github.com/iamvarol", target="_blank",
+                        ),
                     ],
                     className="one-third column",
                     id="button",
